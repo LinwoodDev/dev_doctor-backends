@@ -4,6 +4,8 @@
 
 ## Submit a backend
 
-Create a pull request and create a file with your `namespace.txt`. 
-For example, if you have the domain `example.com`, your file should be named `com.example.txt`. 
-The same with subdomains: The file for the subdomain `backend.example.com` is `com.example.backend.cf.txt`.
+Create a pull request and create a file with your `namespace/name.json`. Add the url like [here](metadata/LinwoodCloud/dev_doctor.json).
+
+## Build data files
+
+Build the data files using `python tools/build.py`.
