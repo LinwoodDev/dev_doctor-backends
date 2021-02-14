@@ -12,6 +12,7 @@ for user in users:
             items.append(os.path.splitext(item)[0])
     with open(os.path.join(current, "data.json"), "w") as f:
         json.dump(items, f, ensure_ascii=False, indent=4)
+    print(user)
 with open(os.path.join('metadata', 'data.json'), "w") as f:
     json.dump(users, f, ensure_ascii=False, indent=4)
 
