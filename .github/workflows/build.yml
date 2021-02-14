@@ -30,9 +30,10 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: "Build"
+          path: public
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: . # The folder the action should deploy.
+          FOLDER: public # The folder the action should deploy.
