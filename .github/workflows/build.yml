@@ -21,9 +21,9 @@ jobs:
         with:
           name: "Build"
           path: |
-            .
-            .git
-            .github
+            ./*
+            !.git
+            !.github
   pages:
     runs-on: ubuntu-latest
     needs: build
